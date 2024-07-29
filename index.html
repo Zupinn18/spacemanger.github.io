@@ -1,251 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>space manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-          <img src="assets/img/Space Manager Logo-02.png" alt="logo" />
-          <!-- <h1>Space Managers</h1> -->
+
+    <header class="header" id="header">
+        <input type="checkbox" name="bars" id="bars">
+
+        <div class="site-logo">
+            <a href="./index.html" class="logo-link">
+                <img src="/landingpage/assets/img/Space Manager Logo-02.png" alt="" srcset="">
+                <!-- <span href="./index.html">SPACE MANAGERS</span> -->
+            </a>
         </div>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">What We Do</a>
-          </li>
-          <li>
-            <a href="#">Project</a>
-          </li>
-          <li>
-            <a href="#">Careers</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+
+        <ul class="navigation">
+            <li><a href="./index.html" class="active">home</a></li>
+            <li><a href="./about.html" class="">About</a></li>
+            <li><a href="./whatwedo.html" class="">what we do</a></li>
+            <li><a href="./project.html" class="">project</a></li>
+            <li><a href="./career.html" class="">Careers</a></li>
+            <li><a href="./contacts.html" class="">contact</a></li>
+            <button ><a href="">Consult online</a></button>
+            <label for="bars" class="close">
+            <i class="fa fa-close"></i>
+            </label>
         </ul>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+        <label for="bars" class="bars">
+            <i class="fa fa-bars"></i>
+        </label>
+    </header>
+    <hr>
+
+    <div class="home-bg" id="home">
+        <div class="home-content">
+            <h1>
+                 <strong>Home</strong> to <strong>Beautiful</strong> interiors
+                
+            </h1>
+            <p>
+                Come Say hi to beautiful Interiros
+            </p>
+            <button class="home-link">
+                <a href="#arrival">Explore</a>
+            </button>
+
         </div>
-      </nav>
-      <div class="menubar">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">What We Do</a>
-              </li>
-              <li>
-                <a href="#">Project</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-        </ul>
-      </div>
+    </div>
+
+
+
+
+    <section class="arrival" id="arrival">
+        <div class="container">
+            <div class="heading">
+                <h2 class="title">One-stop shop for all things interiors</h2>
+                <p class="subtitle">Be it end-to-end interiors, renovation or modular solutions, we have it all for your home or office.<br> With a wide range of furniture & decor, we have your back from start to finish.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="arrival" id="arrival">
+        <div class="container">
+            <div class="items">
+                <div class="item">
+                    <img src="./images/latests/latest-1.jpeg" alt="" srcset="">
+                    <div class="details">
+                        <a href="./interior.html" class="link">
+                            <span>Interiors</span>
+                        </a>
+                        <div class="txt">
+                            <h3>note</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/latests/latest-2.jpeg" alt="" srcset="">
+                    <div class="details">
+                        <a href="renovation.html" class="link" >
+                            <span>Renovations</span> 
+                        </a>
+                        <div class="txt">
+                            <h3>note</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/latests/latest-3.jpg" alt="" srcset="">
+                    <div class="details">
+                        
+                        <a href="./architectural.html"  class="link">
+                            <span>Architectural </span> 
+                        </a>
+                        <div class="txt">
+                            <h3>note</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/latests/latest-4.jpeg" alt="" srcset="">
+                    <div class="details">
+                        <a href="./const.html" class="link">
+                            <span>Construction</span> 
+                        </a>
+                        <div class="txt">
+                            <h3>note</h3>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <img src="./images/latests/latest-5.jpeg" alt="" srcset="">
+                    <div class="details">
+                        <a href="./landscape.html" class="link">
+                            <span>Landscape</span>
+                        </a>
+                        <div class="txt">
+                            <h3>note</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
 
     
-        <div class="head-content">
-            <div class="head-text">
-                <p>Welcome to</p>
-                <h1>BEST <span>INTERIOR DESIGN</span> company FOR YOUR FAMILY</h1>
-                <button>contact us</button>
+
+    <section class="products" id="feature">
+        <div class="container">
+            <div class="heading">
+                <p class="subtitle">Browse our </p>
+                <h2 class="title">Recent Projects</h2>
             </div>
-             <div class="head-img">
-                <div class="bg-img">
-                    <img src="assets/img/bg2.png" alt="">
+            <div class="items">
+                <div class="item">
+                    <div class="product-image">
+                        <img src="./images/latests/latest-1.jpeg" alt="" srcset="">
+                        <div class="details">
+                           
+                            <i class="far fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-angle-double-right"></i>
+                        </div>
+                    </div>
+                    
                 </div>
-                <img class="main-img" src="assets/img/h1.jpeg" alt="">
-             </div>
-        </div>
+                <div class="item">
+                    <div class="product-image">
+                        <img src="./images/latests/latest-4.jpeg" alt="" srcset="">
+                        <div class="details">
+                            
+                            <i class="fa fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <div class="product-image">
+                        <img src="./images/latests/latest-7.jpeg" alt="" srcset="">
+                        <div class="details">
+                            <i class="fa fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                   
+                     </div>
 
-        <div class="why-choose-us">
-            <h1 style="margin-top: 50px; font-size: 3rem;">Why Choose Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis enim ad necessitatibus, consectetur minima sapiente nisi, praesentium laudantium dicta provident veniam? Officiis accusantium porro atque enim voluptatem nam neque amet.</p>
+                <div class="item">
+                    <div class="product-image">
+                        <img src="./images/latests/latest-6.jpeg" alt="" srcset="">
+                        <div class="details">
+                            
+                            <i class="fa fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                   
 
-            <div class="card-container">
-                <div class="card">
-                    <h2>Luxury Facilities</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius veritatis voluptatum rem quos accusantium incidunt accusamus nihil debitis, modi placeat cumque quis ab, animi culpa nulla facilis quisquam at?</p>
                 </div>
-                <div class="card">
-                    <h2>Affordable Price</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quam aperiam non alias distinctio corporis necessitatibus. Odit quos possimus incidunt alias ipsum enim est, inventore saepe ullam, necessitatibus numquam ad?</p>
-                </div>
-                <div class="card">
-                    <h2>Many Choices</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quam aperiam non alias distinctio corporis necessitatibus. Odit quos possimus incidunt alias ipsum enim est, inventore saepe ullam, necessitatibus numquam ad?</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="banner">
-            <h1>Dehradun's Top Construction Company</h1>
-        </div>
+                <div class="item">
+                    <div class="product-image">
+                        <img src="./images/latests/latest-2.jpeg" alt="" srcset="">
+                        <div class="details">
+                            <i class="fa fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                   
 
-        
-            <div class="projects">
-                <h1>OUR PROJECTS</h1>
-                <div class="story-container">
-                    <!-- <div class="story">
-                        <img src="assets/img/slide/13.jpeg" alt="Story 13">
-                    </div> -->
-                    <div class="story">
-                        <img src="assets/img/slide/13.jpeg" alt="Story 13">
-                        <img src="assets/img/slide/1.jpeg" alt="Story 1">
-                        <img src="assets/img/slide/2.jpeg" alt="Story 2">
-                        <img src="assets/img/slide/3.jpeg" alt="Story 3">
-                        <img src="assets/img/slide/4.jpeg" alt="Story 4">
-                        <img src="assets/img/slide/5.jpeg" alt="Story 5">
-                        <img src="assets/img/slide/6.jpeg" alt="Story 6">
-                        <img src="assets/img/slide/7.jpeg" alt="Story 7">
-                        <img src="assets/img/slide/8.jpeg" alt="Story 8">
-                        <img src="assets/img/slide/9.jpeg" alt="Story 9">
-                        <img src="assets/img/slide/10.jpeg" alt="Story 10">
-                        <img src="assets/img/slide/11.jpeg" alt="Story 11">
-                        <img src="assets/img/slide/12.jpeg" alt="Story 12">
-                        <img src="assets/img/slide/13.jpeg" alt="Story 13">
-                        <img src="assets/img/slide/1.jpeg" alt="Story 1">
+                </div>
+                <div class="item">
+                    <div class="product-image" >
+                        <img src="./images/latests/latest-3.jpg" alt="" srcset="">
+                        <div class="details">
+                            <i class="fa fa-heart"></i>
+                            <i class="fa-solid fa-share"></i>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
                     </div>
                    
                 </div>
             </div>
-        
-        
-        <!-- <div class="controls">
-            <button id="prevStory">Previous</button>
-            <button id="nextStory">Next</button>
-        </div> -->
-
-
-
-        <div class="numbers">
-            <h1>Designing Interiors That Leave a Lasting Impression</h1>
-            <ul>
-                <li>64
-                    <p style="font-size: 1rem; text-align: center;">clients world wide</p>
-                </li>
-                <li>124+
-                    <p style="font-size: 1rem; text-align: center;">Projects Completed</p>
-                </li>
-                <li>244K
-                    <p style="font-size: 1rem; text-align: center;">Square Feet</p>
-                </li>
-            </ul>
         </div>
-   
 
-        <div class="testimonial">
-            <h1 style="text-align: center; font-size: 3rem; color: brown;">TESTIMONIAL</h1>
 
-            <div class="outerdiv">
-                <div class="innerdiv">
-                  <!-- div1 -->
-                  <div class="div1 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Daniel Clifford</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
+    </section>
+<section class="ss">
+    <div class="container" id="q"></div>
+     </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="items">
+                <div class="item">
+                    <div class="heading">
+                        <p class="subtitle">take idea about our journey</p>
+                        <h2 class="title" id="q"> Info about us</h2>
                     </div>
-                    <div class="review">
-                      <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
-                    <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                    <div class="content">
+                        <p>
+                            Welcome to Space Managers, where innovation meets aesthetics in the realm of interior design. As a leading interior design company, we specialize in creating personalized and functional spaces for both residential and commercial clients. Our commitment to excellence and attention to detail set us apart, making us your trusted partner in turning your vision into reality.
+                        </p>
+                        <p>
+                            At Space Managers, we believe that your surroundings significantly impact your well-being and productivity. With this philosophy in mind, our team of dedicated professionals strives to deliver designs that not only enhance the visual appeal of a space but also contribute to its functionality. We blend creativity with functionality, creating environments that inspire and resonate with the unique needs of our clients
+                        </p>
+                        <h4>Office</h4>
+                        <ul class="contacts">
+                            <li>
+                                <i class="fa fa-phone"></i> <span>+91 - 7983659661</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-at"></i> <span>hello@spacemanager.in</span>
+                            </li>
+                            <li>
+                                <p>
+                                    First floor, Sai Lok Shopping Complex, above Tit Bit's Baker, Indra Nagar Colony, Dehradun, Uttarakhand 248007
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="social social-media">
+                            <p class="follow">follow us in:</p>
+                            <div class="line" id="cont">
+                                <a href="facebook.com/namepage"><i class="fab fa-facebook-f"></i></a>
+                                <a href="instagram.com/username"><i class="fab fa-instagram"></i></a>
+                                <a href="twitter.com/username"><i class="fab fa-twitter"></i></a>
+                                <a href="linkedin.com/namepage"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                        </div>
                     </div>
-                  </div>
-                  <!-- div2 -->
-                  <div class="div2 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Jonathan Walters</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <h4>The team was very supportive and kept me motivated</h4>
-                    <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
-                    </div>
-                  </div>
-                  <!-- div3 -->
-                  <div class="div3 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Kira Whittle</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review dark">
-                      <h4>Such a life-changing experience. Highly recommended!</h4>
-                      <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program.  ”</p>
-                    </div>
-                  </div>
-                  <!-- div4 -->
-                  <div class="div4 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name dark">Jeanette Harmon</p>
-                        <p class="designation dark">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review dark">
-                      <h6>An overall wonderful and rewarding experience</h6>
-                    <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
-                    </div>
-                  </div>
-                  <!-- div5 -->
-                  <div class="div5 eachdiv">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">Patrick Abrams</p>
-                        <p class="designation">Verified Graduate</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
-                    <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              
-        
+                <div class="item">
+                    <div class="bg-video">
+                        <div class="link">
+                            <a href="#" class="a">play <img src="images/right-chevron.png" alt="" srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        
-      <script src="/assets/script/script.js"></script>  
+
+
+    </section>
+
+    
+
+
+
+    <section class="contact" id="contact">
+        <div class="container" >
+            <div class="heading" >
+                <h2 class="title" > Contact us</h2>
+            </div>
+            <div class="items">
+                <div class="items ">
+                    <div class="item map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.212152298125!2d77.99699567549877!3d30.316482805630557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b63c6148fa9%3A0xfe17239f3d07eaaa!2sSpace%20Managers!5e0!3m2!1sen!2sin!4v1720301230434!5m2!1sen!2sin" width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="item">
+                        <div class="form">
+                            <p>
+                                Be it end-to-end interiors, renovation or modular solutions, we have it all for your home or office.
+                                With a wide range of furniture & decor, we have your back from start to finish.
+                            </p>
+                            <form action="">
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="phone">
+                                        <label for="phone"><i class="fa fa-phone"></i></label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="email" id="email">
+                                        <label for="email"><i class="fa fa-at"></i></label>
+                                    </div>
+                                </div>
+                                <div class="area-field">
+                                    <textarea name="" id="comment" rows="6"></textarea>
+                                    <label for="comment"><i class="fa fa-comment"></i></label>
+                                </div>
+                                <button class="btn-submit">submit</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="instagram-items">
+            <div class="item">
+                <img src="./images/latests/latest-1.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-2.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-4.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-5.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-6.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/latests/latest-7.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="./images/products/product-3.jpg" alt="" srcset="">
+            </div>
+            <p>follow us instagram</p>
+        </div>
+
+        <div class="items">
+            <div class="col">
+                <h2>info</h2>
+                <p>
+                    Space Managers where innovation meets aesthetics in the realm of interior design. 
+                </p>
+                <ul class="links">
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#contact">contact us</a></li>
+                    <li><a href="">our blog</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="col">
+                <h2>shopping</h2>
+                <ul class="links">
+                    <li><a href="">online cards</a></li>
+                    <li><a href="">return policy</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">shipping</a></li>
+                    <li><a href="">inventory</a></li>
+                    <li><a href="">locals</a></li>
+                </ul>
+            </div> -->
+            <div class="col">
+                <h2>follow us</h2>
+                <ul class="social">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="site-logo">
+                    <a href="/landingpage/index.html" class="logo-link">
+                        <img src="./images/logo.png" alt="" srcset=""><br>
+                        <span>Space Managers</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <p>copyright &copy; at 2023 by <a href="#itcode">itcode</a> | all rights reserved,</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: true,
+            speed: 600,
+            loop: true,
+            breakpoints: {
+                350: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                750: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                950: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            }
+        });
+    </script>
 </body>
+
 </html>

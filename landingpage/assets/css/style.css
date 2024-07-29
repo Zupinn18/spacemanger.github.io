@@ -137,10 +137,9 @@ nav ul li a:hover {
   background-color: #f5f5f5;
 }
 
-.container{
-    /* background-image: url("/assets/img/2.jpeg"); */
-  
-}
+/* .container{
+
+} */
 
 .head-content {
     display: flex;
@@ -480,6 +479,161 @@ color: #9a0000;
 	text-decoration: none;
 }
 
+
+.footer {
+  overflow: hidden;
+  background-color: #9a0000;
+}
+
+.instagram-items {
+  display: flex;
+  width: 2000px;
+  position: relative;
+}
+
+.instagram-items p {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.instagram-items .item {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.instagram-items .item:hover {
+  background: transparent;
+}
+
+
+.instagram-items .item img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+  opacity: 0.5;
+}
+
+.instagram-items .item:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.footer .items {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer .items .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer .items .col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .items .col h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.footer .items .col p {
+  font-size: 16px;
+  color: #ccc;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+
+.footer .items .col.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer .items .col ul.links li a {
+  font-size: 16px;
+  line-height: 16px;
+  color: #eee;
+  font-weight: 300;
+}
+
+.footer .items .col ul.links li a:hover {
+  color: #fff;
+
+}
+
+.footer .items .col ul.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .items .col ul.social a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #18406f;
+}
+
+.footer .items .col ul.social a:hover {
+  background-color: #fff;
+  color: #18406f;
+}
+
+.col  .site-logo .logo-link img {
+  width: fit-content;
+  height: 75px;
+  object-fit: cover;
+}
+.col .site-logo .logo-link span {
+  color: white;
+}
+
+.rights {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+  border-top: 1px solid #9a0000;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.rights a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.rights a:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 1000px)
 {
 	.innerdiv
@@ -487,7 +641,6 @@ color: #9a0000;
 		transform: scale(0.7);
 	}
   .menubar {
-
     z-index: 3;
 }
   .head-content {
