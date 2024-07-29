@@ -486,6 +486,59 @@ color: #9a0000;
 	{
 		transform: scale(0.7);
 	}
+  .menubar {
+
+    z-index: 3;
+}
+  .head-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.head-content .head-img img {
+  width: 400px;
+  height: 300px;
+  margin: 40px;
+}
+
+.head-content .head-text h1 {
+  font-size: 2.5rem;
+  margin-left: 40px;
+}
+.why-choose-us {
+  margin-top: 60px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+.numbers ul li {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  /* font-family: "Kalnia Glaze", serif; */
+  font-optical-sizing: auto;
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: normal;
+  /* font-variation-settings: "wdth" 100; */
+  list-style: none;
+  color: #9a0000;
+  margin: 20px;
+}
+.numbers ul {
+  display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  margin-left: -30px;
+}
+
 }
 @media only screen and (max-width: 800px)
 {
