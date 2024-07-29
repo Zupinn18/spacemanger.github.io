@@ -478,7 +478,34 @@ color: #9a0000;
 {
 	text-decoration: none;
 }
+.floating-social a,
+.floating-social button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
 
+.floating-social {
+    background: #fff;
+    border-radius: 50px;
+    bottom: 300px;
+    box-shadow: 0 4px 44px rgba(24, 153, 239, .2);
+    position: fixed;
+    right: 0px;
+    text-align: center;
+    width: 48px;
+    z-index: 9;
+}
+
+.floating-social button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
 
 .footer {
   overflow: hidden;
