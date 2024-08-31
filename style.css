@@ -1388,9 +1388,17 @@ label {
 }
 
 input[type="text"],
-input[type="phone number"],
+input[type="tel"],
 input[type="email"],
 textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select{
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
