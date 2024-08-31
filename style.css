@@ -105,7 +105,7 @@ h4 {
 /* home */
 
 .home-bg {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(images/bg.jpeg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.235), rgba(0, 0, 0, 0.244)), url(images/bg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -120,6 +120,7 @@ h4 {
     text-align: center;
     color: #fff;
     padding: 1rem;
+    margin-top: 170px;
 }
 
 .home-bg .home-content h1 {
@@ -127,7 +128,17 @@ h4 {
 }
 
 .home-bg .home-content h1 strong {
+    color: white;
+    background:  #9a0000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.home-bg .home-content h1 span {
+
     color: #9a0000;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .home-bg .home-content .home-link {
@@ -137,7 +148,7 @@ h4 {
 }
 
 .home-bg .home-content p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
 }
 
@@ -188,7 +199,7 @@ section .heading .title {
     font-weight:bolder;
     font-size: 60px;
     line-height: 100px;
-    font-weight: 300;
+    font-weight: 600;
     color: #9a0000;
     text-transform: capitalize;
     
@@ -294,10 +305,13 @@ section .container {
 
 .arrival .details .link span {
     color:  #9a0000;
+    background: #ffffff;
 }
 
 
-
+.products{
+    background: #9a0000;
+}
 
 .products .items {
     display: grid;
@@ -795,6 +809,12 @@ section .container {
 }
 .col .site-logo .logo-link span {
     color: white;
+}
+
+.col .site-logo .logo-link img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .rights {
@@ -1326,3 +1346,73 @@ a {
     }
   }
   
+/* Popup Form Styling */
+.popup-form {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="phone number"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #9a0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #9a0000;
+}
+
+@media screen and (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+    }
+}

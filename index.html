@@ -39,11 +39,34 @@
         </label>
     </header>
     <hr>
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2 style="color: #9a0000;">Book Free Consultation</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="name">Phone Number</label>
+                <input type="phone number" id="phone number" name="phone number" required>
+
+                <label for="name">City</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Book now</button>
+            </form>
+        </div>
+    </div>
     <div class="home-bg" id="home">
         <div class="home-content">
             <h1>
-                 <strong>Home</strong> to <strong>Beautiful</strong> interiors
+                 <strong>Home to Beautiful</strong> <br/> <span>interiors</span>
                 
             </h1>
             <p>
@@ -147,8 +170,8 @@
     <section class="products" id="feature">
         <div class="container">
             <div class="heading">
-                <p class="subtitle">Browse our </p>
-                <h2 class="title">Recent Projects</h2>
+                <p class="subtitle" style="color: #ffffff; font-size: 30px;">Browse our </p>
+                <h2 class="title" style="color: #ffffff;">Recent Projects</h2>
             </div>
             <div class="items">
                 <div class="item">
@@ -406,19 +429,35 @@
             <div class="col">
                 <div class="site-logo">
                     <a href="/landingpage/index.html" class="logo-link">
-                        <img src="/landingpage/assets/img/Space Manager Logo-02.png" alt="" srcset=""><br>
-                        <span>Space Managers</span>
+                        <img src="/landingpage/assets/img/Space Manager Logo-06.png" alt="" srcset=""><br>
+                  
                     </a>
                 </div>
             </div>
         </div>
         <div class="rights">
-            <p>copyright &copy; at 2023 by <a href="#itcode">Zupinn</a> | all rights reserved</p>
+            <p>copyright &copy; at 2024 by <a href="#itcode">Spacemanager</a> | all rights reserved</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
     <script>
+            setTimeout(function() {
+                document.getElementById('popupForm').style.display = 'flex';
+            }, 4000);
+
+            // Close the popup form when the close button is clicked
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                document.getElementById('popupForm').style.display = 'none';
+            });
+
+            // Optionally, close the popup when clicking outside the form
+            window.addEventListener('click', function(event) {
+                if (event.target === document.getElementById('popupForm')) {
+                    document.getElementById('popupForm').style.display = 'none';
+                }
+            });
+
         const swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             spaceBetween: 10,
@@ -440,6 +479,10 @@
                 },
             }
         });
+
+        // Show the popup form after 4 seconds
+
+
     </script>
 </body>
 
