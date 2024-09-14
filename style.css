@@ -840,7 +840,21 @@ section .container {
 }
 
 @media(max-width: 750px) {
+    .home-bg .home-content h1 strong {
+        color: white;
+        background: #9a0000;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.5rem;
+    }
 
+    .home-bg .home-content h1 span {
+        color: #9a0000;
+        background: #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 2.5rem;
+    }
     /* Initially hide both bars and close buttons */
     .close,
     .bars {
