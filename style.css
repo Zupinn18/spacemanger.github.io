@@ -839,8 +839,9 @@ section .container {
     text-decoration: underline;
 }
 
-@media(max-width:750px) {
+@media(max-width: 750px) {
 
+    /* Initially hide both bars and close buttons */
     .close,
     .bars {
         display: block;
@@ -849,16 +850,19 @@ section .container {
         cursor: pointer;
     }
 
+    /* Positioning the close button */
     .close {
         position: absolute;
         top: 1rem;
         right: 1rem;
+        display: none; /* Initially hidden */
     }
 
-    .header .navigation {
+    /* Navigation menu hidden off the screen initially */
+    .navigation {
         position: fixed;
         top: 0;
-        left: 100vw;
+        left: 100vw;  /* Positioned off-screen */
         width: 100vw;
         min-height: 100vh;
         display: flex;
@@ -871,23 +875,37 @@ section .container {
         transition: left 0.5s;
     }
 
+    /* When the checkbox is checked, show the navigation menu */
     #bars:checked~.navigation {
+        left: 0vw;  /* Move the menu into view */
+        background-color: #f6f2f2;
+    }
+
+    /* When the menu is open, hide the hamburger icon and show the close icon */
+    #bars:checked~.bars {
+        display: none;
+    }
+
+    #bars:checked~.navigation .close {
+        display: block; /* Show the close icon when menu is open */
+    }
+
+    .header {
+        position: relative;
+        max-width: 1600px;
+        padding: 15px 6%;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         position: fixed;
         top: 0;
-        left: 0vw;
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.4rem;
-        background-color: #f6f2f2;
-        z-index: 1000;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        z-index: 100;
     }
- 
-  
-
 }
 
 @media (max-width:450px) {
